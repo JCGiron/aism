@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/aism/imports/pato_import.owl>
-<http://purl.obolibrary.org/obo/aism/releases/2026-01-28/imports/pato_import.owl>
+<http://purl.obolibrary.org/obo/aism/releases/2026-02-14/imports/pato_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/pato/releases/2025-05-14/pato-base.owl>)
-Annotation(owl:versionInfo "2026-01-28")
+Annotation(owl:versionInfo "2026-02-14")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000000>))
@@ -24,6 +24,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000069>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000070>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000117>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000122>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000133>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000140>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000141>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000150>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000365>))
@@ -63,6 +65,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001355>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001369>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001419>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001475>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001476>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001500>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001543>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001546>))
@@ -100,6 +104,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002301>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002303>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002305>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002318>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002326>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002327>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002328>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002539>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0015024>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0015025>))
@@ -272,6 +279,26 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespac
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000122> "PATO:0000122")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000122> "length")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000122> <http://purl.obolibrary.org/obo/PATO_0001708>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000133> (orientation)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:JE") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000133> "A spatial quality inhering in a bearer by virtue of the bearer's placement which is defined by the angle between the bearer and an axis, or the angle between the bearer and another object.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0000133> "angular placement")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000133> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000133> "PATO:0000133")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000133> "orientation")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000133> <http://purl.obolibrary.org/obo/PATO_0000140>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000140> (position)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000140> "A spatial quality inhering in a bearer by virtue of the bearer's spatial location relative to other objects in the vicinity.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0000140> "location")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0000140> "placement")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0000140> "relational spatial quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000140> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000140> "PATO:0000140")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000140> "position")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000140> <http://purl.obolibrary.org/obo/PATO_0001018>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000141> (structure)
 
@@ -635,6 +662,26 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001419> "sharp")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001419> <http://purl.obolibrary.org/obo/PATO_0000944>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0001475> (increased position)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001475> "A position which is relatively high.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0001475> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0001475> "PATO:0001475")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001475> "increased position")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PATO_0001475> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000140> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0015007> <http://purl.obolibrary.org/obo/PATO_0000461>)))
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001475> <http://purl.obolibrary.org/obo/PATO_0000140>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001475> <http://purl.obolibrary.org/obo/PATO_0002305>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001476> (decreased position)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001476> "A positional which is relatively low.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0001476> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0001476> "PATO:0001476")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001476> "decreased position")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PATO_0001476> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000140> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0015008> <http://purl.obolibrary.org/obo/PATO_0000461>)))
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001476> <http://purl.obolibrary.org/obo/PATO_0000140>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001476> <http://purl.obolibrary.org/obo/PATO_0002303>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0001500> (tapered)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "WordNet:WordNet") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001500> "A shape quality inhering in a bearer by virtue of the bearer's being gradually narrower or thinner toward one end.")
@@ -986,6 +1033,37 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespac
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0002318> "PATO:0002318")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002318> "superelliptic")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002318> <http://purl.obolibrary.org/obo/PATO_0002006>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0002326> (angle)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002326> "An orientation inhering in a bearer by virtue of the bearer's placement at an angle.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PATO_0002326> "2011-11-23T12:06:09Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0002326> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0002326> "PATO:0002326")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002326> "angle")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002326> <http://purl.obolibrary.org/obo/PATO_0000133>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0002327> (increased angle to)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002327> "An angle which is relatively high.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PATO_0002327> "2011-11-23T12:06:38Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0002327> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0002327> "PATO:0002327")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002327> "increased angle to")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PATO_0002327> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0002326> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0015007> <http://purl.obolibrary.org/obo/PATO_0000461>)))
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002327> <http://purl.obolibrary.org/obo/PATO_0001475>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002327> <http://purl.obolibrary.org/obo/PATO_0002326>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0002328> (decreased angle to)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002328> "An angle which is relatively low.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PATO_0002328> "2011-11-23T12:06:54Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0002328> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0002328> "PATO:0002328")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002328> "decreased angle to")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PATO_0002328> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0002326> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0015008> <http://purl.obolibrary.org/obo/PATO_0000461>)))
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002328> <http://purl.obolibrary.org/obo/PATO_0001476>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002328> <http://purl.obolibrary.org/obo/PATO_0002326>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002539> (ring shaped)
 

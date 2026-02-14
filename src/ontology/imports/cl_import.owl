@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/aism/imports/cl_import.owl>
-<http://purl.obolibrary.org/obo/aism/releases/2026-01-28/imports/cl_import.owl>
+<http://purl.obolibrary.org/obo/aism/releases/2026-02-14/imports/cl_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/cl/releases/2025-12-17/cl-base.owl>)
-Annotation(owl:versionInfo "2026-01-28")
+Annotation(owl:versionInfo "2026-02-14")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000000>))
@@ -28,6 +28,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CL_1100001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032940>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_131567>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2759>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_50557>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000586>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000587>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000018>))
@@ -40,6 +41,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000993>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001134>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001555>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002530>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002548>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004804>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0007376>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))

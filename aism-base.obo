@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: aism/releases/2026-01-28/aism-base.owl
+data-version: aism/releases/2026-02-14/aism-base.owl
 subsetdef: AISM:0000171 ""
 idspace: cito http://purl.org/spar/cito/ 
 idspace: doap http://usefulinc.com/ns/doap# 
@@ -17,7 +17,7 @@ ontology: aism/aism-base
 property_value: IAO:0000700 "http://purl.obolibrary.org/obo/AISM_0000174" xsd:string
 property_value: IAO:0000700 "http://purl.obolibrary.org/obo/PATO_0000001" xsd:string
 property_value: IAO:0000700 "http://purl.obolibrary.org/obo/UBERON_0001062" xsd:string
-property_value: owl:versionInfo "2026-01-28" xsd:string
+property_value: owl:versionInfo "2026-02-14" xsd:string
 property_value: term:license https://creativecommons.org/licenses/by/4.0/
 property_value: x_1.1:contributor "Giulio Montanaro (gmontanaro) https://orcid.org/0000-0003-0836-1364" xsd:string
 property_value: x_1.1:contributor "István Mikó (imiko) https://orcid.org/0000-0003-2938-9075" xsd:string
@@ -134,7 +134,7 @@ is_a: AISM:0000002 {x_1.1:contributor="imiko https://orcid.org/0000-0003-2938-90
 [Term]
 id: AISM:0000015
 name: cranio-cardinal articulation
-def: "The articulation between the cardo and the cranium." [] {x_1.1:contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-10-27"}
+def: "The articulation between the cardo and the head capsule." [] {x_1.1:contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-10-27"}
 is_a: AISM:0000002 {x_1.1:contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect articulation
 
 [Term]
@@ -260,7 +260,7 @@ name: insect leg {IAO:0000232="Modified 2023-04-13: removed ‘cuticle of’ fro
 def: "The cuticle of the paired appendage of the insect thorax that is composed of coxa, trochanter, femur, tibia, tarsus, and pretarsus." [] {term:modified="2021-12-08", x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-18"}
 is_a: AISM:0000029 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect appendage
 relationship: BFO:0000050 AISM:0000108 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect thorax
-relationship: BFO:0000051 AISM:0000047 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pretarsus
+relationship: BFO:0000051 AISM:0000047 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! distitarsus
 relationship: BFO:0000051 AISM:0000075 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tibia
 relationship: BFO:0000051 AISM:0000076 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! femur
 relationship: BFO:0000051 AISM:0000077 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! coxa
@@ -305,7 +305,7 @@ relationship: BFO:0000051 AISM:0000067 {x_1.1:contributor="jgiron https://orcid.
 relationship: BFO:0000051 AISM:0000070 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! profemur
 relationship: BFO:0000051 AISM:0004171 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! protrochanter
 relationship: BFO:0000051 AISM:0004190 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! protarsus
-relationship: BFO:0000051 AISM:0004194 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! propretarsus
+relationship: BFO:0000051 AISM:0004194 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! prodistitarsus
 relationship: BSPO:0000096 AISM:0000035 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mid leg
 property_value: IAO:0000589 "cuticle of fore leg" xsd:string {creation_date="2023-04-13"}
 
@@ -320,7 +320,7 @@ relationship: BFO:0000051 AISM:0000068 {x_1.1:contributor="jgiron https://orcid.
 relationship: BFO:0000051 AISM:0000071 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mesofemur
 relationship: BFO:0000051 AISM:0004172 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mesotrochanter
 relationship: BFO:0000051 AISM:0004189 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mesotarsus
-relationship: BFO:0000051 AISM:0004195 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mesopretarsus
+relationship: BFO:0000051 AISM:0004195 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mesodistitarsus
 relationship: BSPO:0000096 AISM:0000036 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! hind leg
 relationship: BSPO:0000099 AISM:0000034 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! fore leg
 property_value: IAO:0000589 "cuticle of mid leg" xsd:string {creation_date="2023-04-13"}
@@ -336,7 +336,7 @@ relationship: BFO:0000051 AISM:0000069 {x_1.1:contributor="jgiron https://orcid.
 relationship: BFO:0000051 AISM:0000072 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! metafemur
 relationship: BFO:0000051 AISM:0004173 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! metatrochanter
 relationship: BFO:0000051 AISM:0004188 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! metatarsus
-relationship: BFO:0000051 AISM:0004196 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! metapretarsus
+relationship: BFO:0000051 AISM:0004196 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! metadistitarsus
 relationship: BSPO:0000099 AISM:0000035 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mid leg
 property_value: IAO:0000589 "cuticle of hind leg" xsd:string {creation_date="2023-04-13"}
 
@@ -444,12 +444,13 @@ relationship: RO:0002150 AISM:0004126 {x_1.1:contributor="jgiron https://orcid.o
 
 [Term]
 id: AISM:0000047
-name: pretarsus {AISM:0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Pretarsus: apical element of leg bearing ungues; distinct and cylindrical in entognathous hexapods, strongly reduced in Insecta.\"", IAO:0000232="Modified 2023-04-13: removed ‘cuticle of’ from label.\nstarasov https://orcid.org/0000-0001-5237-2330"}
-def: "The cuticle of the appendage of the insect leg that is attached to the cuticle of tarsus by the tarso-pretarsal conjunctiva." [] {term:modified="2021-12-08", x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-18"}
+name: distitarsus {AISM:0000171="Dashman, T. (1953) Terminology of the pretarsus. Annals of the Entomological Society of America 46, 56–62. https://doi.org/10.1093/aesa/46.1.56\n\n\"The distitarsus is the terminal, or most distal tarsal segment\"", IAO:0000232="Modified 2026-02-14: Updated to distitarsus to better reflect distal position on the leg.\n\njgiron https://orcid.org/0000-0002-0851-6883", AISM:0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Pretarsus: apical element of leg bearing ungues; distinct and cylindrical in entognathous hexapods, strongly reduced in Insecta.\"", IAO:0000232="Modified 2023-04-13: removed ‘cuticle of’ from label.\nstarasov https://orcid.org/0000-0001-5237-2330"}
+def: "The cuticle of the appendage of the insect leg that is attached to the cuticle of tarsus by the tarso-distitarsal conjunctiva." [] {term:modified="2026-02-14", term:modified="2021-12-08", x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-18"}
+synonym: "pretarsus" EXACT [] {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000029 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect appendage
 relationship: BFO:0000050 AISM:0000031 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect leg
-relationship: RO:0002150 AISM:0004187 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tarso-pretarsal conjunctiva
-property_value: IAO:0000589 "cuticle of pretarsus" xsd:string {creation_date="2023-04-13"}
+relationship: RO:0002150 AISM:0004187 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tarso-distitarsal conjunctiva
+property_value: IAO:0000589 "cuticle of distitarsus" xsd:string {creation_date="2023-04-13"}
 
 [Term]
 id: AISM:0000048
@@ -1314,7 +1315,7 @@ id: AISM:0000149
 name: pretarsal muscle
 def: "The somatic muscle that inserts in the pretarsus." [] {creation_date="2020-11-11", x_1.1:contributor="imiko https://orcid.org/0000-0003-2938-9075", term:modified="2021-12-13"}
 is_a: AISM:0002064 {x_1.1:contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! insect leg muscle
-relationship: RO:0002371 AISM:0000047 {x_1.1:contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! pretarsus
+relationship: RO:0002371 AISM:0000047 {x_1.1:contributor="imiko https://orcid.org/0000-0003-2938-9075"} ! distitarsus
 property_value: IAO:0000232 "There are usually two muscle bands of the pretarsal muscle, one is arising from the femur, the other from the tibia. The muscle usually inserts on a resilin rich basal sclerite of the pretarsus, the unguitractor plate." xsd:string {x_1.1:contributor="imiko https://orcid.org/0000-0003-2938-9075", creation_date="2020-11-11"}
 
 [Term]
@@ -2627,7 +2628,7 @@ is_a: AISM:0000424 {x_1.1:contributor="gmontanaro https://orcid.org/0000-0003-08
 [Term]
 id: AISM:0000430
 name: metatibial posteroventral carina {creation_date="2025-03-10", x_1.1:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
-def: "The mesotibial carina that is located in the antero-dorsal region of the mesotibia." [] {creation_date="2025-03-10", x_1.1:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
+def: "The metatibial carina that is located in the antero-dorsal region of the metatibia." [] {creation_date="2025-03-10", x_1.1:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364"}
 is_a: AISM:0000425 {x_1.1:contributor="gmontanaro https://orcid.org/0000-0003-0836-1364", creation_date="2025-03-10"} ! metatibial carina
 
 [Term]
@@ -5033,6 +5034,9 @@ id: AISM:0004184
 name: mesotibio-mesotarsal conjunctiva
 def: "The conjunctiva that encircles the mesotarsus by joining the distal margin of the mesotibia and the proximal margin of the mesotarsus." [] {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-28"}
 is_a: AISM:0004182 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tibio-tarsal conjunctiva
+relationship: AISM:0000078 AISM:0004189 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircles mesotarsus
+relationship: AISM:0000079 AISM:0000068 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by mesotibia
+relationship: BFO:0000050 AISM:0000035 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mid leg
 
 [Term]
 id: AISM:0004185
@@ -5055,10 +5059,10 @@ relationship: RO:0002220 AISM:0000121 {x_1.1:contributor="jgiron https://orcid.o
 
 [Term]
 id: AISM:0004187
-name: tarso-pretarsal conjunctiva
-def: "The conjunctiva that encircles the pretarsus by joining the distal margin of the distalmost tarsomere and the proximal margin of the pretarsus." [] {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-28"}
+name: tarso-distitarsal conjunctiva {IAO:0000232="Modified 2026-02-14: Updated to distitarsal to match with updated distitarsus.\njgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The conjunctiva that encircles the distitarsus by joining the distal margin of the distalmost tarsomere and the proximal margin of the distitarsus." [] {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-28"}
 is_a: AISM:0000102 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! ring conjunctiva
-relationship: AISM:0000078 AISM:0000047 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircles pretarsus
+relationship: AISM:0000078 AISM:0000047 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircles distitarsus
 relationship: AISM:0000079 AISM:0004169 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by tarsus
 relationship: BFO:0000050 AISM:0000031 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect leg
 
@@ -5090,54 +5094,54 @@ property_value: IAO:0000589 "cuticle of protarsus" xsd:string {creation_date="20
 
 [Term]
 id: AISM:0004191
-name: protarso-propretarsal conjunctiva
-def: "The conjunctiva that encircles the propretarsus by joining the distal margin of the distalmost protarsomere and the proximal margin of the propretarsus." [] {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-28"}
-is_a: AISM:0004187 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tarso-pretarsal conjunctiva
-relationship: AISM:0000078 AISM:0004194 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircles propretarsus
+name: protarso-prodistitarsal conjunctiva {IAO:0000232="Modified 2026-02-14: Updated to distitarsus.\njgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The conjunctiva that encircles the prodistitarsus by joining the distal margin of the distalmost protarsomere and the proximal margin of the prodistitarsus." [] {IAO:0000232="Modified 2026-02-14: Updated to distitarsus.\njgiron https://orcid.org/0000-0002-0851-6883", x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-28"}
+is_a: AISM:0004187 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tarso-distitarsal conjunctiva
+relationship: AISM:0000078 AISM:0004194 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircles prodistitarsus
 relationship: AISM:0000079 AISM:0004190 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by protarsus
 
 [Term]
 id: AISM:0004192
-name: mesotarso-mesopretarsal conjunctiva
-def: "The conjunctiva that encircles the mesopretarsus by joining the distal margin of the distalmost mesotarsomere and the proximal margin of the mesopretarsus." [] {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-28"}
-is_a: AISM:0004187 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tarso-pretarsal conjunctiva
-relationship: AISM:0000078 AISM:0004195 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircles mesopretarsus
+name: mesotarso-mesodistitarsal conjunctiva {IAO:0000232="Modified 2026-02-14: Updated to distitarsus.\njgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The conjunctiva that encircles the mesodistitarsus by joining the distal margin of the distalmost mesotarsomere and the proximal margin of the mesodistitarsus." [] {IAO:0000232="Modified 2026-02-14: Updated to distitarsus.\njgiron https://orcid.org/0000-0002-0851-6883", x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-28"}
+is_a: AISM:0004187 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tarso-distitarsal conjunctiva
+relationship: AISM:0000078 AISM:0004195 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircles mesodistitarsus
 relationship: AISM:0000079 AISM:0004189 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by mesotarsus
 
 [Term]
 id: AISM:0004193
-name: metatarso-metapretarsal conjunctiva
-def: "The conjunctiva that encircles the metapretarsus by joining the distal margin of the distalmost metatarsomere and the proximal margin of the metapretarsus." [] {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-28"}
-is_a: AISM:0004187 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tarso-pretarsal conjunctiva
-relationship: AISM:0000078 AISM:0004196 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircles metapretarsus
+name: metatarso-metadistitarsal conjunctiva {IAO:0000232="Modified 2026-02-14: Updated to distitarsus.\njgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The conjunctiva that encircles the metadistitarsus by joining the distal margin of the distalmost metatarsomere and the proximal margin of the metadistitarsus." [] {IAO:0000232="Modified 2026-02-14: Updated to distitarsus.\njgiron https://orcid.org/0000-0002-0851-6883", x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-28"}
+is_a: AISM:0004187 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! tarso-distitarsal conjunctiva
+relationship: AISM:0000078 AISM:0004196 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircles metadistitarsus
 relationship: AISM:0000079 AISM:0004188 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! encircled by metatarsus
 
 [Term]
 id: AISM:0004194
-name: propretarsus {IAO:0000232="Modified 2023-04-13: removed ‘cuticle of’ from label.\nstarasov https://orcid.org/0000-0001-5237-2330"}
-def: "The cuticle of the appendage of the fore leg that is attached to the protarsus by the protarso-propretarsal conjunctiva." [] {term:modified="2021-12-10", x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-28"}
-is_a: AISM:0000047 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pretarsus
+name: prodistitarsus {IAO:0000232="Modified 2026-02-14: Updated to distitarsus.\njgiron https://orcid.org/0000-0002-0851-6883", IAO:0000232="Modified 2023-04-13: removed ‘cuticle of’ from label.\nstarasov https://orcid.org/0000-0001-5237-2330"}
+def: "The cuticle of the appendage of the fore leg that is attached to the protarsus by the protarso-prodistitarsal conjunctiva." [] {IAO:0000232="Modified 2026-02-14: Updated to distitarsus.\njgiron https://orcid.org/0000-0002-0851-6883", term:modified="2021-12-10", x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-28"}
+is_a: AISM:0000047 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! distitarsus
 relationship: BFO:0000050 AISM:0000034 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! fore leg
-relationship: RO:0002150 AISM:0004191 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! protarso-propretarsal conjunctiva
-property_value: IAO:0000589 "cuticle of propretarsus" xsd:string {creation_date="2023-04-13"}
+relationship: RO:0002150 AISM:0004191 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! protarso-prodistitarsal conjunctiva
+property_value: IAO:0000589 "cuticle of prodistitarsus" xsd:string {IAO:0000232="Modified 2026-02-14: Updated to distitarsus.\njgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-04-13"}
 
 [Term]
 id: AISM:0004195
-name: mesopretarsus {IAO:0000232="Modified 2023-04-13: removed ‘cuticle of’ from label.\nstarasov https://orcid.org/0000-0001-5237-2330"}
-def: "The cuticle of the appendage of the mid leg that is attached to the mesotarsus by the mesotarso-mesopretarsal conjunctiva." [] {term:modified="2021-12-10", x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-28"}
-is_a: AISM:0000047 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pretarsus
+name: mesodistitarsus {IAO:0000232="Modified 2026-02-14: Updated to distitarsus.\njgiron https://orcid.org/0000-0002-0851-6883", IAO:0000232="Modified 2023-04-13: removed ‘cuticle of’ from label.\nstarasov https://orcid.org/0000-0001-5237-2330"}
+def: "The cuticle of the appendage of the mid leg that is attached to the mesotarsus by the mesotarso-mesodistitarsal conjunctiva." [] {term:modified="2021-12-10", x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-28"}
+is_a: AISM:0000047 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! distitarsus
 relationship: BFO:0000050 AISM:0000035 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mid leg
-relationship: RO:0002150 AISM:0004192 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mesotarso-mesopretarsal conjunctiva
-property_value: IAO:0000589 "cuticle of mesopretarsus" xsd:string {creation_date="2023-04-13"}
+relationship: RO:0002150 AISM:0004192 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! mesotarso-mesodistitarsal conjunctiva
+property_value: IAO:0000589 "cuticle of mesodistitarsus" xsd:string {IAO:0000232="Modified 2026-02-14: Updated to distitarsus.\njgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-04-13"}
 
 [Term]
 id: AISM:0004196
-name: metapretarsus {IAO:0000232="Modified 2023-04-13: removed ‘cuticle of’ from label.\nstarasov https://orcid.org/0000-0001-5237-2330"}
-def: "The cuticle of the appendage of the hind leg that is attached to the metatarsus by the metatarso-metapretarsal conjunctiva." [] {term:modified="2021-12-10", x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-28"}
-is_a: AISM:0000047 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pretarsus
+name: metadistitarsus {IAO:0000232="Modified 2023-04-13: removed ‘cuticle of’ from label.\nstarasov https://orcid.org/0000-0001-5237-2330"}
+def: "The cuticle of the appendage of the hind leg that is attached to the distitarsus by the metatarso-metadistitarsal conjunctiva." [] {IAO:0000232="Modified 2026-02-14: Updated to distitarsus.\njgiron https://orcid.org/0000-0002-0851-6883", term:modified="2021-12-10", x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-03-28"}
+is_a: AISM:0000047 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! distitarsus
 relationship: BFO:0000050 AISM:0000036 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! hind leg
-relationship: RO:0002150 AISM:0004193 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! metatarso-metapretarsal conjunctiva
-property_value: IAO:0000589 "cuticle of metapretarsus" xsd:string {creation_date="2023-04-13"}
+relationship: RO:0002150 AISM:0004193 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! metatarso-metadistitarsal conjunctiva
+property_value: IAO:0000589 "cuticle of metadistitarsus" xsd:string {IAO:0000232="Modified 2026-02-14: Updated to distitarsus.\njgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-04-13"}
 
 [Term]
 id: AISM:0004197
@@ -5635,20 +5639,21 @@ relationship: BSPO:0000097 AISM:0004258 {x_1.1:contributor="jgiron https://orcid
 
 [Term]
 id: AISM:0004260
-name: pretarsal claw {AISM:0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Ungues: pretarsal claws; unpaired in Collembola and Protura, usually paired in Diplura and Insecta.\""}
-def: "The sclerite that is part of the pretarsus." [] {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-11-19"}
+name: distitarsal claw {IAO:0000232="Modified 2026-02-14: Updated to distitarsal.\njgiron https://orcid.org/0000-0002-0851-6883", AISM:0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Ungues: pretarsal claws; unpaired in Collembola and Protura, usually paired in Diplura and Insecta.\""}
+def: "The sclerite that is part of the distitarsus." [] {IAO:0000232="Modified 2026-02-14: Updated to distitarsus.\njgiron https://orcid.org/0000-0002-0851-6883", x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-11-19"}
+synonym: "pretarsal claw" EXACT []
 synonym: "ungues" EXACT [] {AISM:0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Ungues: pretarsal claws; unpaired in Collembola and Protura, usually paired in Diplura and Insecta.\""}
 is_a: AISM:0000003 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! insect sclerite
-relationship: BFO:0000050 AISM:0000047 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pretarsus
+relationship: BFO:0000050 AISM:0000047 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! distitarsus
 
 [Term]
 id: AISM:0004261
 name: empodium {AISM:0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Empodium: a median process between the claws and pulvilli (if present). It arises from the distal end of the unguitractor plate, is spine-shaped or lobe-like and is sometimes similar in form to the pulvilli (“empodial pulvillus”).\" p. 43.", AISM:0000171="Nichols, S. W. (1989) Torre-Bueno glossary of entomology. New York Entomological Society. 840 pp.\n\nhttps://ipmhouse.tamu.edu/files/2021/03/The-Torre-Bueno-Glossary-of-Entomology.pdf\n\n\"a spine- or lobelike process of the unguitractor\"", IAO:0000232="Modified 2023-04-13: removed ‘cuticle of’ from label.\nstarasov https://orcid.org/0000-0001-5237-2330"}
-def: "The cuticular protrusion that is part of the pretarsus, ventral to the tarsal claws and medial to the pulvilli (if present)." [] {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-11-19", IAO:0000232="Modified 2023-01-11: added medial to pulvilli.\njgiron https://orcid.org/0000-0002-0851-6883"}
+def: "The cuticular protrusion that is part of the distitarsus, ventral to the distitarsal claws and medial to the pulvilli (if present)." [] {IAO:0000232="Modified 2026-02-14: Updated to distitarsus.\njgiron https://orcid.org/0000-0002-0851-6883", x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-11-19", IAO:0000232="Modified 2023-01-11: added medial to pulvilli.\njgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000008 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticular protrusion
 relationship: AISM:0000012 AISM:0004308 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"} ! medial_to pulvillus
-relationship: BFO:0000050 AISM:0000047 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pretarsus
-relationship: BSPO:0000102 AISM:0004260 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pretarsal claw
+relationship: BFO:0000050 AISM:0000047 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! distitarsus
+relationship: BSPO:0000102 AISM:0004260 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! distitarsal claw
 property_value: IAO:0000589 "cuticle of empodium" xsd:string {creation_date="2023-04-13"}
 
 [Term]
@@ -6031,22 +6036,22 @@ id: AISM:0004307
 name: pretarsal seta {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
 def: "The cuticular seta that is adjacent to the cuticle of the pretarsus." [] {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
 is_a: AISM:0000039 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"} ! cuticular seta
-relationship: RO:0002220 AISM:0000047 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"} ! pretarsus
+relationship: RO:0002220 AISM:0000047 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"} ! distitarsus
 
 [Term]
 id: AISM:0004308
 name: pulvillus {AISM:0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Pulvilli: smooth or hairy paired lateral membranous lobes below the claws\". p. 44.", x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", IAO:0000232="Modified 2023-04-13: removed ‘cuticle of’ from label.\nstarasov https://orcid.org/0000-0001-5237-2330"}
 def: "The cuticular protrusion that is part of the pretarsus, ventral to the tarsal claws." [] {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2021-11-19"}
 is_a: AISM:0000008 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! cuticular protrusion
-relationship: BFO:0000050 AISM:0000047 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pretarsus
-relationship: BSPO:0000102 AISM:0004260 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! pretarsal claw
+relationship: BFO:0000050 AISM:0000047 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! distitarsus
+relationship: BSPO:0000102 AISM:0004260 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"} ! distitarsal claw
 relationship: RO:0000053 PATO:0040024 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 property_value: IAO:0000589 "cuticle of pulvillus" xsd:string {creation_date="2023-04-13"}
 
 [Term]
 id: AISM:0004309
 name: arolium {AISM:0000171="Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.\n\nhttps://doi.org/10.1515/9783110264043\n\n\"Arolium: the median hollow lobe of the pretarsus. It can be completely membranous or partly sclerotized.\" p. 42.\n\"unpaired, between the claws\" p. 40.", x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11", IAO:0000232="Modified 2023-04-13: removed ‘cuticle of’ from label.\nstarasov https://orcid.org/0000-0001-5237-2330"}
-def: "The medial cuticular protrusion of the pretarsus." [] {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
+def: "The medial cuticular protrusion of the distitarsus." [] {IAO:0000232="Modified 2026-02-14: Updated to distitarsus.\njgiron https://orcid.org/0000-0002-0851-6883", x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2023-01-11"}
 property_value: IAO:0000589 "cuticle of arolium" xsd:string {creation_date="2023-04-13"}
 
 [Term]
@@ -6142,6 +6147,18 @@ name: empodial seta {creation_date="2024-06-20", x_1.1:contributor="jgiron https
 def: "The cuticular seta that is adjacent to the cuticle of the empodium." [] {creation_date="2024-06-20", x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883"}
 is_a: AISM:0000039 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-06-20"} ! cuticular seta
 relationship: RO:0002220 AISM:0004261 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2024-06-20"} ! empodium
+
+[Term]
+id: AISM:0004321
+name: dorsal cranio-mandibular articulation
+def: "The insect cranio-mandibular articulation between the dorsal region of the insect mandible and the dorso-lateral region of the head capsule." [] {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2026-02-12"}
+is_a: AISM:0000014 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2026-02-14"} ! insect cranio-mandibular articulation
+
+[Term]
+id: AISM:0004322
+name: ventral cranio-mandibular articulation
+def: "The insect cranio-mandibular articulation between the ventral region of the insect mandible and the latero-ventral region of the head capsule." [] {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2026-02-12"}
+is_a: AISM:0000014 {x_1.1:contributor="jgiron https://orcid.org/0000-0002-0851-6883", creation_date="2026-02-14"} ! insect cranio-mandibular articulation
 
 [Typedef]
 id: AISM:0000011

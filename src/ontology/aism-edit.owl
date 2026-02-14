@@ -797,6 +797,8 @@ Declaration(Class(obo:AISM_0004317))
 Declaration(Class(obo:AISM_0004318))
 Declaration(Class(obo:AISM_0004319))
 Declaration(Class(obo:AISM_0004320))
+Declaration(Class(obo:AISM_0004321))
+Declaration(Class(obo:AISM_0004322))
 Declaration(Class(obo:BSPO_0000006))
 Declaration(Class(obo:BSPO_0000027))
 Declaration(Class(obo:BSPO_0000029))
@@ -830,11 +832,14 @@ Declaration(Class(obo:BSPO_0000684))
 Declaration(Class(obo:CL_0000066))
 Declaration(Class(obo:CL_0000150))
 Declaration(Class(obo:CL_0000362))
+Declaration(Class(obo:OBI_0000679))
 Declaration(Class(obo:PATO_0000039))
 Declaration(Class(obo:PATO_0000040))
 Declaration(Class(obo:PATO_0000052))
 Declaration(Class(obo:PATO_0000117))
 Declaration(Class(obo:PATO_0000122))
+Declaration(Class(obo:PATO_0000133))
+Declaration(Class(obo:PATO_0000140))
 Declaration(Class(obo:PATO_0000141))
 Declaration(Class(obo:PATO_0000150))
 Declaration(Class(obo:PATO_0000365))
@@ -872,6 +877,7 @@ Declaration(Class(obo:PATO_0002219))
 Declaration(Class(obo:PATO_0002228))
 Declaration(Class(obo:PATO_0002254))
 Declaration(Class(obo:PATO_0002258))
+Declaration(Class(obo:PATO_0002326))
 Declaration(Class(obo:PATO_0002539))
 Declaration(Class(obo:PATO_0040024))
 Declaration(Class(obo:PR_Q9V7U0))
@@ -890,6 +896,8 @@ Declaration(Class(obo:UBERON_0001002))
 Declaration(Class(obo:UBERON_0001134))
 Declaration(Class(obo:UBERON_0001555))
 Declaration(Class(obo:UBERON_0002536))
+Declaration(Class(obo:UBERON_0003142))
+Declaration(Class(obo:UBERON_0003143))
 Declaration(Class(obo:UBERON_0004053))
 Declaration(Class(obo:UBERON_0004175))
 Declaration(Class(obo:UBERON_0004176))
@@ -898,6 +906,7 @@ Declaration(Class(obo:UBERON_0014895))
 Declaration(Class(obo:UBERON_0034925))
 Declaration(Class(obo:UBERON_0034926))
 Declaration(Class(obo:UBERON_6003007))
+Declaration(Class(obo:UBERON_6006011))
 Declaration(Class(obo:UBERON_6007284))
 Declaration(Class(obo:UBERON_6007289))
 Declaration(Class(owl:Nothing))
@@ -983,7 +992,7 @@ AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000118 "A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like."@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000118 "alternative label"@en)
 
-# Annotation Property: obo:IAO_0000232 (curator note)
+# Annotation Property: obo:IAO_0000232 (curator notes)
 
 AnnotationAssertion(rdfs:label obo:IAO_0000232 "curator note")
 
@@ -1238,7 +1247,7 @@ SubClassOf(Annotation(x_1.1:contributor "imiko https://orcid.org/0000-0003-2938-
 
 # Class: obo:AISM_0000015 (cranio-cardinal articulation)
 
-AnnotationAssertion(Annotation(x_1.1:contributor "imiko https://orcid.org/0000-0003-2938-9075") Annotation(oboI:creation_date "2020-10-27") obo:IAO_0000115 obo:AISM_0000015 "The articulation between the cardo and the cranium."@en)
+AnnotationAssertion(Annotation(x_1.1:contributor "imiko https://orcid.org/0000-0003-2938-9075") Annotation(oboI:creation_date "2020-10-27") obo:IAO_0000115 obo:AISM_0000015 "The articulation between the cardo and the head capsule."@en)
 AnnotationAssertion(rdfs:label obo:AISM_0000015 "cranio-cardinal articulation"@en)
 SubClassOf(Annotation(x_1.1:contributor "imiko https://orcid.org/0000-0003-2938-9075") obo:AISM_0000015 obo:AISM_0000002)
 SubClassOf(Annotation(x_1.1:contributor "imiko https://orcid.org/0000-0003-2938-9075") obo:AISM_0000015 ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(obo:AISM_0000018 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:BFO_0000051 obo:BSPO_0000070) ObjectSomeValuesFrom(obo:RO_0002220 obo:AISM_0000019)))))
@@ -1635,16 +1644,21 @@ SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0000046 ObjectSomeValuesFrom(obo:RO_0002150 obo:AISM_0004125))
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0000046 ObjectSomeValuesFrom(obo:RO_0002150 obo:AISM_0004126))
 
-# Class: obo:AISM_0000047 (pretarsus)
+# Class: obo:AISM_0000047 (distitarsus)
 
-AnnotationAssertion(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(term:modified "2021-12-08") Annotation(oboI:creation_date "2021-03-18") obo:IAO_0000115 obo:AISM_0000047 "The cuticle of the appendage of the insect leg that is attached to the cuticle of tarsus by the tarso-pretarsal conjunctiva."@en)
-AnnotationAssertion(Annotation(oboI:creation_date "2023-04-13") obo:IAO_0000589 obo:AISM_0000047 "cuticle of pretarsus"@en)
+AnnotationAssertion(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(term:modified "2021-12-08") Annotation(term:modified "2026-02-14") Annotation(oboI:creation_date "2021-03-18") obo:IAO_0000115 obo:AISM_0000047 "The cuticle of the appendage of the insect leg that is attached to the cuticle of tarsus by the tarso-distitarsal conjunctiva."@en)
+AnnotationAssertion(Annotation(oboI:creation_date "2023-04-13") obo:IAO_0000589 obo:AISM_0000047 "cuticle of distitarsus"@en)
+AnnotationAssertion(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883"@en) oboI:hasExactSynonym obo:AISM_0000047 "pretarsus")
 AnnotationAssertion(Annotation(obo:AISM_0000171 "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
 
-\"Pretarsus: apical element of leg bearing ungues; distinct and cylindrical in entognathous hexapods, strongly reduced in Insecta.\""@en) Annotation(obo:IAO_0000232 "Modified 2023-04-13: removed ‘cuticle of’ from label.
-starasov https://orcid.org/0000-0001-5237-2330"@en) rdfs:label obo:AISM_0000047 "pretarsus"@en)
+\"Pretarsus: apical element of leg bearing ungues; distinct and cylindrical in entognathous hexapods, strongly reduced in Insecta.\""@en) Annotation(obo:AISM_0000171 "Dashman, T. (1953) Terminology of the pretarsus. Annals of the Entomological Society of America 46, 56–62. https://doi.org/10.1093/aesa/46.1.56
+
+\"The distitarsus is the terminal, or most distal tarsal segment\"") Annotation(obo:IAO_0000232 "Modified 2023-04-13: removed ‘cuticle of’ from label.
+starasov https://orcid.org/0000-0001-5237-2330"@en) Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsus to better reflect distal position on the leg.
+
+jgiron https://orcid.org/0000-0002-0851-6883") rdfs:label obo:AISM_0000047 "distitarsus"@en)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0000047 obo:AISM_0000029)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0000047 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0000031))
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0000047 ObjectSomeValuesFrom(obo:RO_0002150 obo:AISM_0004187))
@@ -4242,7 +4256,7 @@ SubClassOf(Annotation(x_1.1:contributor "gmontanaro https://orcid.org/0000-0003-
 
 # Class: obo:AISM_0000430 (metatibial posteroventral carina)
 
-AnnotationAssertion(Annotation(x_1.1:contributor "gmontanaro https://orcid.org/0000-0003-0836-1364") Annotation(oboI:creation_date "2025-03-10") obo:IAO_0000115 obo:AISM_0000430 "The mesotibial carina that is located in the antero-dorsal region of the mesotibia."@en)
+AnnotationAssertion(Annotation(x_1.1:contributor "gmontanaro https://orcid.org/0000-0003-0836-1364") Annotation(oboI:creation_date "2025-03-10") obo:IAO_0000115 obo:AISM_0000430 "The metatibial carina that is located in the antero-dorsal region of the metatibia."@en)
 AnnotationAssertion(Annotation(x_1.1:contributor "gmontanaro https://orcid.org/0000-0003-0836-1364") Annotation(oboI:creation_date "2025-03-10") rdfs:label obo:AISM_0000430 "metatibial posteroventral carina"@en)
 SubClassOf(Annotation(x_1.1:contributor "gmontanaro https://orcid.org/0000-0003-0836-1364") Annotation(oboI:creation_date "2025-03-10") obo:AISM_0000430 obo:AISM_0000425)
 SubClassOf(Annotation(x_1.1:contributor "gmontanaro https://orcid.org/0000-0003-0836-1364") Annotation(oboI:creation_date "2025-03-10") obo:AISM_0000430 ObjectSomeValuesFrom(obo:RO_0001025 ObjectIntersectionOf(obo:BSPO_0000035 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0000069))))
@@ -7813,11 +7827,11 @@ SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851
 AnnotationAssertion(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2021-03-28") obo:IAO_0000115 obo:AISM_0004184 "The conjunctiva that encircles the mesotarsus by joining the distal margin of the mesotibia and the proximal margin of the mesotarsus."@en)
 AnnotationAssertion(rdfs:label obo:AISM_0004184 "mesotibio-mesotarsal conjunctiva"@en)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004184 obo:AISM_0004182)
-SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004184 ObjectSomeValuesFrom(obo:AISM_0000078 obo:AISM_0004169))
-SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004184 ObjectSomeValuesFrom(obo:AISM_0000079 obo:AISM_0000075))
-SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004184 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0000031))
-SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004184 ObjectSomeValuesFrom(obo:RO_0002150 ObjectIntersectionOf(obo:BSPO_0000677 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0004169))))
-SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004184 ObjectSomeValuesFrom(obo:RO_0002150 ObjectIntersectionOf(obo:BSPO_0000678 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0000075))))
+SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004184 ObjectSomeValuesFrom(obo:AISM_0000078 obo:AISM_0004189))
+SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004184 ObjectSomeValuesFrom(obo:AISM_0000079 obo:AISM_0000068))
+SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004184 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0000035))
+SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004184 ObjectSomeValuesFrom(obo:RO_0002150 ObjectIntersectionOf(obo:BSPO_0000677 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0004189))))
+SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004184 ObjectSomeValuesFrom(obo:RO_0002150 ObjectIntersectionOf(obo:BSPO_0000678 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0000068))))
 
 # Class: obo:AISM_0004185 (metatibio-metatarsal conjunctiva)
 
@@ -7841,10 +7855,11 @@ SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004186 ObjectSomeValuesFrom(obo:RO_0002220 obo:AISM_0000052))
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004186 ObjectSomeValuesFrom(obo:RO_0002220 obo:AISM_0000121))
 
-# Class: obo:AISM_0004187 (tarso-pretarsal conjunctiva)
+# Class: obo:AISM_0004187 (tarso-distitarsal conjunctiva)
 
-AnnotationAssertion(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2021-03-28") obo:IAO_0000115 obo:AISM_0004187 "The conjunctiva that encircles the pretarsus by joining the distal margin of the distalmost tarsomere and the proximal margin of the pretarsus."@en)
-AnnotationAssertion(rdfs:label obo:AISM_0004187 "tarso-pretarsal conjunctiva"@en)
+AnnotationAssertion(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2021-03-28") obo:IAO_0000115 obo:AISM_0004187 "The conjunctiva that encircles the distitarsus by joining the distal margin of the distalmost tarsomere and the proximal margin of the distitarsus."@en)
+AnnotationAssertion(Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsal to match with updated distitarsus.
+jgiron https://orcid.org/0000-0002-0851-6883") rdfs:label obo:AISM_0004187 "tarso-distitarsal conjunctiva"@en)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004187 obo:AISM_0000102)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004187 ObjectSomeValuesFrom(obo:AISM_0000078 obo:AISM_0000047))
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004187 ObjectSomeValuesFrom(obo:AISM_0000079 obo:AISM_0004169))
@@ -7894,10 +7909,12 @@ SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004190 ObjectSomeValuesFrom(obo:RO_0000053 obo:PATO_0040024))
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004190 ObjectSomeValuesFrom(obo:RO_0002220 ObjectIntersectionOf(obo:BSPO_0000678 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0000067))))
 
-# Class: obo:AISM_0004191 (protarso-propretarsal conjunctiva)
+# Class: obo:AISM_0004191 (protarso-prodistitarsal conjunctiva)
 
-AnnotationAssertion(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2021-03-28") obo:IAO_0000115 obo:AISM_0004191 "The conjunctiva that encircles the propretarsus by joining the distal margin of the distalmost protarsomere and the proximal margin of the propretarsus."@en)
-AnnotationAssertion(rdfs:label obo:AISM_0004191 "protarso-propretarsal conjunctiva"@en)
+AnnotationAssertion(Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsus.
+jgiron https://orcid.org/0000-0002-0851-6883"@en) Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2021-03-28") obo:IAO_0000115 obo:AISM_0004191 "The conjunctiva that encircles the prodistitarsus by joining the distal margin of the distalmost protarsomere and the proximal margin of the prodistitarsus."@en)
+AnnotationAssertion(Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsus.
+jgiron https://orcid.org/0000-0002-0851-6883"@en) rdfs:label obo:AISM_0004191 "protarso-prodistitarsal conjunctiva"@en)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004191 obo:AISM_0004187)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004191 ObjectSomeValuesFrom(obo:AISM_0000078 obo:AISM_0004194))
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004191 ObjectSomeValuesFrom(obo:AISM_0000079 obo:AISM_0004190))
@@ -7905,10 +7922,12 @@ SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004191 ObjectSomeValuesFrom(obo:RO_0002150 ObjectIntersectionOf(obo:BSPO_0000677 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0004194))))
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004191 ObjectSomeValuesFrom(obo:RO_0002150 ObjectIntersectionOf(obo:BSPO_0000678 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0004190))))
 
-# Class: obo:AISM_0004192 (mesotarso-mesopretarsal conjunctiva)
+# Class: obo:AISM_0004192 (mesotarso-mesodistitarsal conjunctiva)
 
-AnnotationAssertion(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2021-03-28") obo:IAO_0000115 obo:AISM_0004192 "The conjunctiva that encircles the mesopretarsus by joining the distal margin of the distalmost mesotarsomere and the proximal margin of the mesopretarsus."@en)
-AnnotationAssertion(rdfs:label obo:AISM_0004192 "mesotarso-mesopretarsal conjunctiva"@en)
+AnnotationAssertion(Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsus.
+jgiron https://orcid.org/0000-0002-0851-6883"@en) Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2021-03-28") obo:IAO_0000115 obo:AISM_0004192 "The conjunctiva that encircles the mesodistitarsus by joining the distal margin of the distalmost mesotarsomere and the proximal margin of the mesodistitarsus."@en)
+AnnotationAssertion(Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsus.
+jgiron https://orcid.org/0000-0002-0851-6883"@en) rdfs:label obo:AISM_0004192 "mesotarso-mesodistitarsal conjunctiva"@en)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004192 obo:AISM_0004187)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004192 ObjectSomeValuesFrom(obo:AISM_0000078 obo:AISM_0004195))
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004192 ObjectSomeValuesFrom(obo:AISM_0000079 obo:AISM_0004189))
@@ -7916,10 +7935,12 @@ SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004192 ObjectSomeValuesFrom(obo:RO_0002150 ObjectIntersectionOf(obo:BSPO_0000677 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0004195))))
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004192 ObjectSomeValuesFrom(obo:RO_0002150 ObjectIntersectionOf(obo:BSPO_0000678 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0004189))))
 
-# Class: obo:AISM_0004193 (metatarso-metapretarsal conjunctiva)
+# Class: obo:AISM_0004193 (metatarso-metadistitarsal conjunctiva)
 
-AnnotationAssertion(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2021-03-28") obo:IAO_0000115 obo:AISM_0004193 "The conjunctiva that encircles the metapretarsus by joining the distal margin of the distalmost metatarsomere and the proximal margin of the metapretarsus."@en)
-AnnotationAssertion(rdfs:label obo:AISM_0004193 "metatarso-metapretarsal conjunctiva"@en)
+AnnotationAssertion(Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsus.
+jgiron https://orcid.org/0000-0002-0851-6883"@en) Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2021-03-28") obo:IAO_0000115 obo:AISM_0004193 "The conjunctiva that encircles the metadistitarsus by joining the distal margin of the distalmost metatarsomere and the proximal margin of the metadistitarsus."@en)
+AnnotationAssertion(Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsus.
+jgiron https://orcid.org/0000-0002-0851-6883"@en) rdfs:label obo:AISM_0004193 "metatarso-metadistitarsal conjunctiva"@en)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004193 obo:AISM_0004187)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004193 ObjectSomeValuesFrom(obo:AISM_0000078 obo:AISM_0004196))
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004193 ObjectSomeValuesFrom(obo:AISM_0000079 obo:AISM_0004188))
@@ -7927,34 +7948,41 @@ SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004193 ObjectSomeValuesFrom(obo:RO_0002150 ObjectIntersectionOf(obo:BSPO_0000677 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0004196))))
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004193 ObjectSomeValuesFrom(obo:RO_0002150 ObjectIntersectionOf(obo:BSPO_0000678 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0004188))))
 
-# Class: obo:AISM_0004194 (propretarsus)
+# Class: obo:AISM_0004194 (prodistitarsus)
 
-AnnotationAssertion(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(term:modified "2021-12-10") Annotation(oboI:creation_date "2021-03-28") obo:IAO_0000115 obo:AISM_0004194 "The cuticle of the appendage of the fore leg that is attached to the protarsus by the protarso-propretarsal conjunctiva."@en)
-AnnotationAssertion(Annotation(oboI:creation_date "2023-04-13") obo:IAO_0000589 obo:AISM_0004194 "cuticle of propretarsus"@en)
+AnnotationAssertion(Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsus.
+jgiron https://orcid.org/0000-0002-0851-6883"@en) Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(term:modified "2021-12-10") Annotation(oboI:creation_date "2021-03-28") obo:IAO_0000115 obo:AISM_0004194 "The cuticle of the appendage of the fore leg that is attached to the protarsus by the protarso-prodistitarsal conjunctiva."@en)
+AnnotationAssertion(Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsus.
+jgiron https://orcid.org/0000-0002-0851-6883"@en) Annotation(oboI:creation_date "2023-04-13") obo:IAO_0000589 obo:AISM_0004194 "cuticle of prodistitarsus"@en)
 AnnotationAssertion(Annotation(obo:IAO_0000232 "Modified 2023-04-13: removed ‘cuticle of’ from label.
-starasov https://orcid.org/0000-0001-5237-2330"@en) rdfs:label obo:AISM_0004194 "propretarsus"@en)
+starasov https://orcid.org/0000-0001-5237-2330"@en) Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsus.
+jgiron https://orcid.org/0000-0002-0851-6883"@en) rdfs:label obo:AISM_0004194 "prodistitarsus"@en)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004194 obo:AISM_0000047)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004194 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0000034))
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004194 ObjectSomeValuesFrom(obo:RO_0002150 obo:AISM_0004191))
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004194 ObjectSomeValuesFrom(obo:RO_0002220 ObjectIntersectionOf(obo:BSPO_0000678 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0004190))))
 
-# Class: obo:AISM_0004195 (mesopretarsus)
+# Class: obo:AISM_0004195 (mesodistitarsus)
 
-AnnotationAssertion(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(term:modified "2021-12-10") Annotation(oboI:creation_date "2021-03-28") obo:IAO_0000115 obo:AISM_0004195 "The cuticle of the appendage of the mid leg that is attached to the mesotarsus by the mesotarso-mesopretarsal conjunctiva."@en)
-AnnotationAssertion(Annotation(oboI:creation_date "2023-04-13") obo:IAO_0000589 obo:AISM_0004195 "cuticle of mesopretarsus"@en)
+AnnotationAssertion(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(term:modified "2021-12-10") Annotation(oboI:creation_date "2021-03-28") obo:IAO_0000115 obo:AISM_0004195 "The cuticle of the appendage of the mid leg that is attached to the mesotarsus by the mesotarso-mesodistitarsal conjunctiva."@en)
+AnnotationAssertion(Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsus.
+jgiron https://orcid.org/0000-0002-0851-6883"@en) Annotation(oboI:creation_date "2023-04-13") obo:IAO_0000589 obo:AISM_0004195 "cuticle of mesodistitarsus"@en)
 AnnotationAssertion(Annotation(obo:IAO_0000232 "Modified 2023-04-13: removed ‘cuticle of’ from label.
-starasov https://orcid.org/0000-0001-5237-2330"@en) rdfs:label obo:AISM_0004195 "mesopretarsus"@en)
+starasov https://orcid.org/0000-0001-5237-2330"@en) Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsus.
+jgiron https://orcid.org/0000-0002-0851-6883"@en) rdfs:label obo:AISM_0004195 "mesodistitarsus"@en)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004195 obo:AISM_0000047)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004195 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0000035))
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004195 ObjectSomeValuesFrom(obo:RO_0002150 obo:AISM_0004192))
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004195 ObjectSomeValuesFrom(obo:RO_0002220 ObjectIntersectionOf(obo:BSPO_0000678 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0004189))))
 
-# Class: obo:AISM_0004196 (metapretarsus)
+# Class: obo:AISM_0004196 (metadistitarsus)
 
-AnnotationAssertion(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(term:modified "2021-12-10") Annotation(oboI:creation_date "2021-03-28") obo:IAO_0000115 obo:AISM_0004196 "The cuticle of the appendage of the hind leg that is attached to the metatarsus by the metatarso-metapretarsal conjunctiva."@en)
-AnnotationAssertion(Annotation(oboI:creation_date "2023-04-13") obo:IAO_0000589 obo:AISM_0004196 "cuticle of metapretarsus"@en)
+AnnotationAssertion(Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsus.
+jgiron https://orcid.org/0000-0002-0851-6883"@en) Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(term:modified "2021-12-10") Annotation(oboI:creation_date "2021-03-28") obo:IAO_0000115 obo:AISM_0004196 "The cuticle of the appendage of the hind leg that is attached to the distitarsus by the metatarso-metadistitarsal conjunctiva."@en)
+AnnotationAssertion(Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsus.
+jgiron https://orcid.org/0000-0002-0851-6883"@en) Annotation(oboI:creation_date "2023-04-13") obo:IAO_0000589 obo:AISM_0004196 "cuticle of metadistitarsus"@en)
 AnnotationAssertion(Annotation(obo:IAO_0000232 "Modified 2023-04-13: removed ‘cuticle of’ from label.
-starasov https://orcid.org/0000-0001-5237-2330"@en) rdfs:label obo:AISM_0004196 "metapretarsus"@en)
+starasov https://orcid.org/0000-0001-5237-2330"@en) rdfs:label obo:AISM_0004196 "metadistitarsus"@en)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004196 obo:AISM_0000047)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004196 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0000036))
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004196 ObjectSomeValuesFrom(obo:RO_0002150 obo:AISM_0004193))
@@ -8592,9 +8620,11 @@ jgiron https://orcid.org/0000-0002-0851-6883"@en) rdfs:label obo:AISM_0004259 "b
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004259 obo:AISM_0004244)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004259 ObjectSomeValuesFrom(obo:BSPO_0000097 obo:AISM_0004258))
 
-# Class: obo:AISM_0004260 (pretarsal claw)
+# Class: obo:AISM_0004260 (distitarsal claw)
 
-AnnotationAssertion(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2021-11-19") obo:IAO_0000115 obo:AISM_0004260 "The sclerite that is part of the pretarsus."@en)
+AnnotationAssertion(Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsus.
+jgiron https://orcid.org/0000-0002-0851-6883"@en) Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2021-11-19") obo:IAO_0000115 obo:AISM_0004260 "The sclerite that is part of the distitarsus."@en)
+AnnotationAssertion(oboI:hasExactSynonym obo:AISM_0004260 "pretarsal claw"@en)
 AnnotationAssertion(Annotation(obo:AISM_0000171 "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
 https://doi.org/10.1515/9783110264043
@@ -8604,14 +8634,16 @@ AnnotationAssertion(Annotation(obo:AISM_0000171 "Beutel RG, Friedrich F, Yang X-
 
 https://doi.org/10.1515/9783110264043
 
-\"Ungues: pretarsal claws; unpaired in Collembola and Protura, usually paired in Diplura and Insecta.\""@en) rdfs:label obo:AISM_0004260 "pretarsal claw"@en)
+\"Ungues: pretarsal claws; unpaired in Collembola and Protura, usually paired in Diplura and Insecta.\""@en) Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsal.
+jgiron https://orcid.org/0000-0002-0851-6883"@en) rdfs:label obo:AISM_0004260 "distitarsal claw"@en)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004260 obo:AISM_0000003)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") obo:AISM_0004260 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0000047))
 
 # Class: obo:AISM_0004261 (empodium)
 
 AnnotationAssertion(Annotation(obo:IAO_0000232 "Modified 2023-01-11: added medial to pulvilli.
-jgiron https://orcid.org/0000-0002-0851-6883"@en) Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2021-11-19") obo:IAO_0000115 obo:AISM_0004261 "The cuticular protrusion that is part of the pretarsus, ventral to the tarsal claws and medial to the pulvilli (if present)."@en)
+jgiron https://orcid.org/0000-0002-0851-6883"@en) Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsus.
+jgiron https://orcid.org/0000-0002-0851-6883"@en) Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2021-11-19") obo:IAO_0000115 obo:AISM_0004261 "The cuticular protrusion that is part of the distitarsus, ventral to the distitarsal claws and medial to the pulvilli (if present)."@en)
 AnnotationAssertion(Annotation(oboI:creation_date "2023-04-13") obo:IAO_0000589 obo:AISM_0004261 "cuticle of empodium"@en)
 AnnotationAssertion(Annotation(obo:AISM_0000171 "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
@@ -9146,7 +9178,8 @@ SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851
 
 # Class: obo:AISM_0004309 (arolium)
 
-AnnotationAssertion(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2023-01-11") obo:IAO_0000115 obo:AISM_0004309 "The medial cuticular protrusion of the pretarsus."@en)
+AnnotationAssertion(Annotation(obo:IAO_0000232 "Modified 2026-02-14: Updated to distitarsus.
+jgiron https://orcid.org/0000-0002-0851-6883"@en) Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2023-01-11") obo:IAO_0000115 obo:AISM_0004309 "The medial cuticular protrusion of the distitarsus."@en)
 AnnotationAssertion(Annotation(oboI:creation_date "2023-04-13") obo:IAO_0000589 obo:AISM_0004309 "cuticle of arolium"@en)
 AnnotationAssertion(Annotation(obo:AISM_0000171 "Beutel RG, Friedrich F, Yang X-K, Ge S-Q (2014) Insect Morphology and Phylogeny Insect morphology and phylogeny: a textbook for students of entomology. De Gruyter.
 
@@ -9262,6 +9295,22 @@ AnnotationAssertion(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2024-06-20") obo:AISM_0004320 obo:AISM_0000039)
 SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2024-06-20") obo:AISM_0004320 ObjectSomeValuesFrom(obo:RO_0002220 obo:AISM_0004261))
 
+# Class: obo:AISM_0004321 (dorsal cranio-mandibular articulation)
+
+AnnotationAssertion(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2026-02-12") obo:IAO_0000115 obo:AISM_0004321 "The insect cranio-mandibular articulation between the dorsal region of the insect mandible and the dorso-lateral region of the head capsule."@en)
+AnnotationAssertion(rdfs:label obo:AISM_0004321 "dorsal cranio-mandibular articulation"@en)
+SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2026-02-14") obo:AISM_0004321 obo:AISM_0000014)
+SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2026-02-14") obo:AISM_0004321 ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(obo:BSPO_0000079 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0000043))))
+SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2026-02-14") obo:AISM_0004321 ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(obo:BSPO_0000080 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0000019))))
+
+# Class: obo:AISM_0004322 (ventral cranio-mandibular articulation)
+
+AnnotationAssertion(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2026-02-12") obo:IAO_0000115 obo:AISM_0004322 "The insect cranio-mandibular articulation between the ventral region of the insect mandible and the latero-ventral region of the head capsule."@en)
+AnnotationAssertion(rdfs:label obo:AISM_0004322 "ventral cranio-mandibular articulation"@en)
+SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2026-02-14") obo:AISM_0004322 obo:AISM_0000014)
+SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2026-02-14") obo:AISM_0004322 ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(obo:BSPO_0000084 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0000043))))
+SubClassOf(Annotation(x_1.1:contributor "jgiron https://orcid.org/0000-0002-0851-6883") Annotation(oboI:creation_date "2026-02-14") obo:AISM_0004322 ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(obo:BSPO_0000085 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AISM_0000019))))
+
 # Class: obo:BSPO_0000377 (proximal surface)
 
 AnnotationAssertion(rdfs:label obo:BSPO_0000377 "internal side"@en)
@@ -9271,6 +9320,12 @@ SubClassOf(obo:BSPO_0000377 ObjectSomeValuesFrom(obo:BSPO_0000113 obo:BSPO_00003
 
 AnnotationAssertion(rdfs:label obo:BSPO_0000378 "external side"@en)
 SubClassOf(obo:BSPO_0000378 ObjectSomeValuesFrom(obo:BSPO_0000113 obo:BSPO_0000377))
+
+# Class: obo:OBI_0000679 (average value)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000679 "A data item that is produced as the output of an averaging data transformation and represents the average value of the input data."@en)
+AnnotationAssertion(rdfs:label obo:OBI_0000679 "average value"@en)
+SubClassOf(obo:OBI_0000679 obo:IAO_0000027)
 
 # Class: obo:PATO_0000039 (direction)
 
@@ -9284,6 +9339,18 @@ AnnotationAssertion(obo:IAO_0000115 obo:PATO_0000122 "A 1-D extent quality which
 AnnotationAssertion(oboI:id obo:PATO_0000122 "PATO:0000122")
 AnnotationAssertion(rdfs:label obo:PATO_0000122 "length")
 SubClassOf(obo:PATO_0000122 obo:PATO_0001708)
+
+# Class: obo:PATO_0000133 (orientation)
+
+AnnotationAssertion(obo:IAO_0000115 obo:PATO_0000133 "A spatial quality inhering in a bearer by virtue of the bearer's placement which is defined by the angle between the bearer and an axis, or the angle between the bearer and another object."@en)
+AnnotationAssertion(rdfs:label obo:PATO_0000133 "orientation"@en)
+SubClassOf(obo:PATO_0000133 obo:PATO_0000140)
+
+# Class: obo:PATO_0000140 (position)
+
+AnnotationAssertion(obo:IAO_0000115 obo:PATO_0000140 "A spatial quality inhering in a bearer by virtue of the bearer's spatial location relative to other objects in the vicinity."@en)
+AnnotationAssertion(rdfs:label obo:PATO_0000140 "position"@en)
+SubClassOf(obo:PATO_0000140 obo:PATO_0001018)
 
 # Class: obo:PATO_0000365 (down)
 
@@ -9347,6 +9414,12 @@ AnnotationAssertion(obo:IAO_0000115 obo:PATO_0002258 "A shape quality inhering i
 AnnotationAssertion(rdfs:label obo:PATO_0002258 "pointed"@en)
 SubClassOf(obo:PATO_0002258 obo:PATO_0001419)
 
+# Class: obo:PATO_0002326 (angle)
+
+AnnotationAssertion(obo:IAO_0000115 obo:PATO_0002326 "An orientation inhering in a bearer by virtue of the bearer's placement at an angle."@en)
+AnnotationAssertion(rdfs:label obo:PATO_0002326 "angle"@en)
+SubClassOf(obo:PATO_0002326 obo:PATO_0000133)
+
 # Class: obo:PATO_0040024 (bilaterally paired)
 
 AnnotationAssertion(rdfs:label obo:PATO_0040024 "bilaterally paired"@en)
@@ -9374,6 +9447,26 @@ SubClassOf(obo:UBERON_0000079 obo:UBERON_0000990)
 
 AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0001134 "")
 
+# Class: obo:UBERON_0002548 (larva)
+
+AnnotationAssertion(oboI:hasDbXref obo:UBERON_0002548 "FBbt_00001727")
+
+# Class: obo:UBERON_0003142 (prepupa)
+
+AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0003142 "An organism at the prepupal stage. The prepupal stage is a life stage interposed between the larval and the pupal stages in insects that undergo a complete metamorphosis. The start of the pre-pupal stage is marked by pupariation, and the end is marked by pupation."@en)
+AnnotationAssertion(rdfs:label obo:UBERON_0003142 "prepupa"@en)
+SubClassOf(obo:UBERON_0003142 obo:UBERON_0000468)
+SubClassOf(obo:UBERON_0003142 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_50557))
+SubClassOf(obo:UBERON_0003142 ObjectSomeValuesFrom(obo:RO_0002202 obo:UBERON_0002548))
+SubClassOf(obo:UBERON_0003142 ObjectSomeValuesFrom(obo:RO_0002495 obo:UBERON_0002548))
+
+# Class: obo:UBERON_0003143 (pupa)
+
+AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0003143 "An organism at the pupal stage. A life cycle stage of holometabolous insects in which the organism is a pupa and starts with the larval-pupal apolysis and ends with pupal-adult apolysis."@en)
+AnnotationAssertion(rdfs:label obo:UBERON_0003143 "pupa"@en)
+SubClassOf(obo:UBERON_0003143 obo:UBERON_0000468)
+SubClassOf(obo:UBERON_0003143 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_33392))
+
 # Class: obo:UBERON_0004053 (external male genitalia)
 
 AnnotationAssertion(Annotation(oboI:hasDbXref "MP:0009199") obo:IAO_0000115 obo:UBERON_0004053 "The external masculine genital organs, including the penis and scrotum."@en)
@@ -9388,6 +9481,14 @@ AnnotationAssertion(rdfs:label obo:UBERON_0004175 "internal genitalia"@en)
 # Class: obo:UBERON_0014895 (somatic muscle, invertebrate)
 
 AnnotationAssertion(rdfs:label obo:UBERON_0014895 "somatic muscle"@en)
+
+# Class: obo:UBERON_6006011 (insect pharate adult)
+
+AnnotationAssertion(obo:IAO_0000115 obo:UBERON_6006011 "The developing adult after pupal-adult apolysis, i.e. from stage P8 (when yellow eye color first becomes visible through the pupal case), to eclosion."@en)
+AnnotationAssertion(rdfs:label obo:UBERON_6006011 "insect pharate adult"@en)
+SubClassOf(obo:UBERON_6006011 obo:UBERON_0000468)
+SubClassOf(obo:UBERON_6006011 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_50557))
+SubClassOf(obo:UBERON_6006011 ObjectSomeValuesFrom(obo:RO_0002202 obo:UBERON_0003143))
 
 # Class: obo:UBERON_6007289 (insect tagmatic subdivision of integument)
 

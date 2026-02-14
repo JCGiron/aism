@@ -40,9 +40,9 @@
         "val" : "https://creativecommons.org/licenses/by/4.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-01-28"
+        "val" : "2026-02-14"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/aism/releases/2026-01-28/aism-base.json"
+      "version" : "http://purl.obolibrary.org/obo/aism/releases/2026-02-14/aism-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000000",
@@ -205,7 +205,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The articulation between the cardo and the cranium."
+          "val" : "The articulation between the cardo and the head capsule."
         }
       }
     }, {
@@ -546,15 +546,19 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0000047",
-      "lbl" : "pretarsus",
+      "lbl" : "distitarsus",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The cuticle of the appendage of the insect leg that is attached to the cuticle of tarsus by the tarso-pretarsal conjunctiva."
+          "val" : "The cuticle of the appendage of the insect leg that is attached to the cuticle of tarsus by the tarso-distitarsal conjunctiva."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "pretarsus"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
-          "val" : "cuticle of pretarsus"
+          "val" : "cuticle of distitarsus"
         } ]
       }
     }, {
@@ -3233,7 +3237,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The mesotibial carina that is located in the antero-dorsal region of the mesotibia."
+          "val" : "The metatibial carina that is located in the antero-dorsal region of the metatibia."
         }
       }
     }, {
@@ -6112,11 +6116,11 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0004187",
-      "lbl" : "tarso-pretarsal conjunctiva",
+      "lbl" : "tarso-distitarsal conjunctiva",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The conjunctiva that encircles the pretarsus by joining the distal margin of the distalmost tarsomere and the proximal margin of the pretarsus."
+          "val" : "The conjunctiva that encircles the distitarsus by joining the distal margin of the distalmost tarsomere and the proximal margin of the distitarsus."
         }
       }
     }, {
@@ -6160,68 +6164,68 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0004191",
-      "lbl" : "protarso-propretarsal conjunctiva",
+      "lbl" : "protarso-prodistitarsal conjunctiva",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The conjunctiva that encircles the propretarsus by joining the distal margin of the distalmost protarsomere and the proximal margin of the propretarsus."
+          "val" : "The conjunctiva that encircles the prodistitarsus by joining the distal margin of the distalmost protarsomere and the proximal margin of the prodistitarsus."
         }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0004192",
-      "lbl" : "mesotarso-mesopretarsal conjunctiva",
+      "lbl" : "mesotarso-mesodistitarsal conjunctiva",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The conjunctiva that encircles the mesopretarsus by joining the distal margin of the distalmost mesotarsomere and the proximal margin of the mesopretarsus."
+          "val" : "The conjunctiva that encircles the mesodistitarsus by joining the distal margin of the distalmost mesotarsomere and the proximal margin of the mesodistitarsus."
         }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0004193",
-      "lbl" : "metatarso-metapretarsal conjunctiva",
+      "lbl" : "metatarso-metadistitarsal conjunctiva",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The conjunctiva that encircles the metapretarsus by joining the distal margin of the distalmost metatarsomere and the proximal margin of the metapretarsus."
+          "val" : "The conjunctiva that encircles the metadistitarsus by joining the distal margin of the distalmost metatarsomere and the proximal margin of the metadistitarsus."
         }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0004194",
-      "lbl" : "propretarsus",
+      "lbl" : "prodistitarsus",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The cuticle of the appendage of the fore leg that is attached to the protarsus by the protarso-propretarsal conjunctiva."
+          "val" : "The cuticle of the appendage of the fore leg that is attached to the protarsus by the protarso-prodistitarsal conjunctiva."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
-          "val" : "cuticle of propretarsus"
+          "val" : "cuticle of prodistitarsus"
         } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0004195",
-      "lbl" : "mesopretarsus",
+      "lbl" : "mesodistitarsus",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The cuticle of the appendage of the mid leg that is attached to the mesotarsus by the mesotarso-mesopretarsal conjunctiva."
+          "val" : "The cuticle of the appendage of the mid leg that is attached to the mesotarsus by the mesotarso-mesodistitarsal conjunctiva."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
-          "val" : "cuticle of mesopretarsus"
+          "val" : "cuticle of mesodistitarsus"
         } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0004196",
-      "lbl" : "metapretarsus",
+      "lbl" : "metadistitarsus",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The cuticle of the appendage of the hind leg that is attached to the metatarsus by the metatarso-metapretarsal conjunctiva."
+          "val" : "The cuticle of the appendage of the hind leg that is attached to the distitarsus by the metatarso-metadistitarsal conjunctiva."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
-          "val" : "cuticle of metapretarsus"
+          "val" : "cuticle of metadistitarsus"
         } ]
       }
     }, {
@@ -6828,13 +6832,16 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/AISM_0004260",
-      "lbl" : "pretarsal claw",
+      "lbl" : "distitarsal claw",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The sclerite that is part of the pretarsus."
+          "val" : "The sclerite that is part of the distitarsus."
         },
         "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "pretarsal claw"
+        }, {
           "pred" : "hasExactSynonym",
           "val" : "ungues"
         } ]
@@ -6845,7 +6852,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The cuticular protrusion that is part of the pretarsus, ventral to the tarsal claws and medial to the pulvilli (if present)."
+          "val" : "The cuticular protrusion that is part of the distitarsus, ventral to the distitarsal claws and medial to the pulvilli (if present)."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
@@ -7381,7 +7388,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The medial cuticular protrusion of the pretarsus."
+          "val" : "The medial cuticular protrusion of the distitarsus."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
@@ -7486,6 +7493,24 @@
       "meta" : {
         "definition" : {
           "val" : "The cuticular seta that is adjacent to the cuticle of the empodium."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0004321",
+      "lbl" : "dorsal cranio-mandibular articulation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The insect cranio-mandibular articulation between the dorsal region of the insect mandible and the dorso-lateral region of the head capsule."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/AISM_0004322",
+      "lbl" : "ventral cranio-mandibular articulation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The insect cranio-mandibular articulation between the ventral region of the insect mandible and the latero-ventral region of the head capsule."
         }
       }
     }, {
@@ -26956,6 +26981,36 @@
         } ]
       }
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004184",
+      "pred" : "http://purl.obolibrary.org/obo/AISM_0000078",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0004189",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004184",
+      "pred" : "http://purl.obolibrary.org/obo/AISM_0000079",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000068",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004184",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000035",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        } ]
+      }
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/AISM_0004185",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/AISM_0004182",
@@ -31134,6 +31189,32 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2024-06-20"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004321",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000014",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2026-02-14"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/AISM_0004322",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/AISM_0000014",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "jgiron https://orcid.org/0000-0002-0851-6883"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2026-02-14"
         } ]
       }
     }, {
